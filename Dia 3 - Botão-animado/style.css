@@ -12,12 +12,12 @@ body {
 }
 
 body {
-background: linear-gradient(-190deg, rgb(98, 0, 255), rgb(196, 195, 195));
+background: linear-gradient(-190deg, rgb(0, 204, 255), rgb(196, 195, 195));
   object-fit: cover;
 }
 
 .mudar {
-  background: linear-gradient(-190deg, rgb(255, 255, 255), rgb(8, 105, 150));
+  background: linear-gradient(-190deg, rgb(255, 255, 255), rgb(0, 89, 255));
 }
 
 .btns {
