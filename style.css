@@ -31,6 +31,10 @@ main {
   width: 100%;
 }
 
+.day {
+  color: white;
+}
+
 .content-list {
   position: relative;
 
@@ -70,6 +74,13 @@ main {
   z-index: 100;
 }
 
+ul i {
+  margin-right: 4px;
+  color: rgb(0, 225, 255);
+}
+
+
+
 ul::-webkit-scrollbar {
   width: 4px; /* width of the entire scrollbar */
 }
@@ -86,10 +97,9 @@ ul::-webkit-scrollbar-thumb {
 }
 
 .content-list ul li a:hover {
-  background-color: rgba(0, 172, 193, 1);
+  text-decoration: underline;
   border-radius: 40px;
   color: white;
-  padding: 2px 10px;
   transition: 0.3s;
 }
 
@@ -100,7 +110,7 @@ ul::-webkit-scrollbar-thumb {
     padding-bottom: 10px;
     padding-top: 2px;
     flex-wrap: wrap;
-    height: 247px;
+    height: 317px;
     overflow-y: scroll;
     z-index: 100;
   }
