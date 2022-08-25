@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+background: linear-gradient(-190deg, rgb(98, 0, 255), rgb(196, 195, 195));
+  object-fit: cover;
+}
+
+.mudar {
+  background: linear-gradient(-190deg, rgb(255, 255, 255), rgb(8, 105, 150));
+}
+
+.btns {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.efeito {
+  font-family: 'Itim', cursive;
+  border: none;
+  color: rgb(0, 0, 0);
+  width: 308px;
+  padding: 20px;
+  margin: 10px;
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 24px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.efeito-6 {
+  background-color: rgb(255, 255, 255);
+  transform-style: preserve-3d;
+}
+
+.efeito::after {
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: rgb(0, 60, 255);
+  border-radius: 5px;
+  color: white;
+  box-sizing: border-box;
+  content: 'Desafio concluido!';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+
+.efeito-6:hover {
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
+}
