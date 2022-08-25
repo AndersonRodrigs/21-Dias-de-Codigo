@@ -21,8 +21,8 @@ background: linear-gradient(-190deg, rgb(0, 204, 255), rgb(196, 195, 195));
 }
 
 .btns {
-  display: flex;
   position: absolute;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,6 @@ background: linear-gradient(-190deg, rgb(0, 204, 255), rgb(196, 195, 195));
 .efeito {
   font-family: 'Itim', cursive;
   border: none;
-  color: rgb(0, 0, 0);
   width: 308px;
   padding: 20px;
   margin: 10px;
@@ -45,26 +44,28 @@ background: linear-gradient(-190deg, rgb(0, 204, 255), rgb(196, 195, 195));
   box-sizing: border-box;
   cursor: pointer;
   transition: 0.4s ease;
+  color: rgb(0, 0, 0);
 }
 
 .efeito-6 {
-  background-color: rgb(255, 255, 255);
   transform-style: preserve-3d;
+  background-color: rgb(255, 255, 255);
 }
 
 .efeito::after {
+  position: absolute;
   top: -100%;
   left: 0px;
   width: 100%;
   padding: 20px;
-  position: absolute;
-  background-color: rgb(0, 60, 255);
   border-radius: 5px;
-  color: white;
   box-sizing: border-box;
-  content: 'Desafio concluido!';
   transform-origin: left bottom;
   transform: rotateX(90deg);
+
+  content: 'Desafio concluido!';
+  color: white;
+  background-color: rgb(0, 60, 255);
 }
 
 .efeito-6:hover {
