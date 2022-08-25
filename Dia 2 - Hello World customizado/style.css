@@ -39,9 +39,9 @@ h1 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 50%;
+  width: 80%;
   height: 50%;
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(31, 31, 31);
   font-size: 100px;
   color: rgb(0, 0, 0);
   mix-blend-mode: multiply;
@@ -51,5 +51,5 @@ h1 {
 h1:hover {
   color: rgb(255, 255, 255);
   transition: 0.6s;
-  box-shadow: 20px 20px 10px black;
+  box-shadow: 20px 20px 5px black;
 }
