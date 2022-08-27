@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://kit.fontawesome.com/beb24498dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <main class="container">
+      <img src="./img/pay-gc3583ac3d_1920.jpg" alt="">
+      <div class="calculadora">
+        <h1>Calculadora</h1>
+        <p id="resultado"></p>
+        <table>
+          <tr>
+            <td><button class="btn btnC" onclick="
+              clean()">C</button></td>
+            <td><button class="btn btnDlt" onclick="delet()"><i class="fa-solid fa-delete-left"></i></button></td>
+            <td><button class="btn btnD" onclick="insert('/')">/</button></td>
+            <td><button class="btn btnM" onclick="insert('*')">X</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="insert('7')">7</button></td>
+            <td><button class="btn" onclick="insert('8')">8</button></td>
+            <td><button class="btn" onclick="insert('9')">9</button></td>
+            <td><button class="btn btnS" onclick="insert('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="insert('4')">4</button></td>
+            <td><button class="btn" onclick="insert('5')">5</button></td>
+            <td><button class="btn" onclick="insert('6')">6</button></td>
+            <td><button class="btn btnA" onclick="insert('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="insert('1')">1</button></td>
+            <td><button class="btn" onclick="insert('2')">2</button></td>
+            <td><button class="btn" onclick="insert('3')">3</button></td>
+            <td rowspan="2"><button class="btn btnM1" onclick="calcular()">=</button></td>
+          </tr>
+          <tr>
+            <td colspan="2" onclick="insert('0')"><button class="btn">0</button></td>
+            <td><button class="btn btnM2" onclick="insert('.')">.</button></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
