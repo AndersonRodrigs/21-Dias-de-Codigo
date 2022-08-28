@@ -16,16 +16,25 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.back h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #161622;
+.back {
   width: 100%;
   height: 100%;
   position: absolute;
-  font-size: 21rem;
-  color: #0b0b11;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.back h1 {
+  filter: drop-shadow(6px 7px 2px rgba(84, 58, 183, 1));
+  font-size: 19rem;
+  color: #ffffff;
 }
 
 .content {
@@ -36,8 +45,9 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-
-  color: aliceblue;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  color: rgb(0, 0, 0);
 }
 
 .text {
@@ -53,26 +63,69 @@ body {
   font-size: 48px;
 }
 
-.text h2{
+.text h2 {
+  padding: 13px;
+  margin-top: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
 }
 
+.text span {
+  margin-top: 30px;
+}
+
+.text a {
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  background: rgb(63, 34, 179) ;
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
+.text a:hover {
+  background-color: rgb(0, 98, 110);
+  transition: 0.3s;
+}
+
 @media screen and (max-width: 707px) {
   .back h1 {
-    font-size: 15rem;
+    font-size: 13rem;
   }
 
   .text h1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.75rem;
   }
-  
-  .text h2{
+
+  .text h2 {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
+  }
+
+  .text a {
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .back h1 {
+    font-size: 12rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .back h1 {
+    font-size: 11rem;
   }
 }
