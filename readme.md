@@ -10,8 +10,8 @@
 • ✅ Dia 2 - Criar um Hello World customizado com fontes, cores e imagens. <br>
 • ✅ Dia 3 - Criar um botão animado. <br>
 • ✅ Dia 4 - Criar uma calculadora. <br>
-• ⬛ Dia 5 - Desenvolver uma página customizada que exiba o erro 404. <br>
-• ⬛ Dia 6 - Crie um card com o efeito glassmorphism. <br>
+• ✅ Dia 5 - Desenvolver uma página customizada que exiba o erro 404. <br>
+• ✅ Dia 6 - Crie um card com o efeito glassmorphism. <br>
 • ⬛ Dia 7 - Desenvolver um contador. <br>
 • ⬛ Dia 8 - Desenvolver um toggle que altere o tema para claro e escuro. <br>
 • ⬛ Dia 9 - Criar uma animação de loading. <br>
