@@ -1,11 +1,12 @@
 // Contador inicial
 
 let count = 0
-
 // Seleciona o valo e valor do botão
 
 const value = document.getElementById('value')
 const btns = document.querySelectorAll('.btn')
+value.style.color = "#333"
+
 
 btns.forEach(function (btn) {
   btn.addEventListener('click', e => {
@@ -18,7 +19,7 @@ btns.forEach(function (btn) {
       count = 0
     }
 
-      if (count> 0) {
+      if (count > 0) {
         value.style.color = "#009900"
       } else if (count < 0){
         value.style.color = "#b61515"
