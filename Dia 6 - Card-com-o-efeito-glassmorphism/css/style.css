@@ -12,10 +12,6 @@ body {
   height: 100%;
 }
 
-/* div {
-  border: 1px solid white;
-} */
-
 a {
   text-decoration: none;
 }
@@ -25,13 +21,14 @@ ul {
 }
 
 body {
-  position: fixed;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(152.97deg, #0c0c0c 0%, #201e1e 100%);
-  background-repeat: no-repeat;
-  color: white;
+  position: fixed;
   overflow: hidden;
   padding-inline: 6%;
+
+  color: white;
+  background: linear-gradient(152.97deg, #0c0c0c 0%, #201e1e 100%);
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -45,18 +42,21 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0px auto;
+
+  /* margin: 0px auto; */
   height: 500px;
   max-width: 480px;
   min-width: 300px;
-  border-radius: 40px;
+
+  border-radius: 15px;
   margin-top: 80px;
   padding-inline: 40px;
+
   background-color: rgba(255, 255, 255, 0.1);
   background: linear-gradient(
     152.97deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 255, 255, 0.212) 0%,
+    rgba(255, 255, 255, 0.055) 100%
   );
   backdrop-filter: blur(4px);
   z-index: 100;
@@ -67,29 +67,32 @@ body {
 }
 
 .card h1 {
+  font-size: 48px;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 48px;
+
   color: rgba(255, 255, 255, 0.733);
 }
 
 form p {
+  font-size: 1.3rem;
   padding-inline: 10px;
   margin-top: 10px;
-  font-size: 1.3rem;
+
   color: rgba(255, 255, 255, 0.781);
 }
 
 .card form input {
+  font-size: 0.9rem;
+
   margin-top: 2px;
-  background: rgba(111, 123, 139, 0.212);
   width: 100%;
   height: 38px;
+
   border: none;
   border-radius: 15px;
   padding-inline: 10px;
-  font-size: 0.9rem;
-  /* box-shadow: 0px 3px 2px rgba(1, 120, 255, 0.25); */
+  background: rgba(111, 123, 139, 0.212);
 }
 
 .card form input:hover {
@@ -98,24 +101,25 @@ form p {
 
 .card form input:focus {
   box-shadow: 0px 0px 6px rgb(0, 153, 255);
-  outline: none;
   color: white;
+  outline: none;
 }
 
 .ball-position {
-  top: 0px;
   position: absolute;
+  top: 0px;
   width: 300px;
   height: 100%;
 }
 
 .ball {
   position: relative;
-  border-radius: 50%;
-  width: 200px;
   height: 200px;
+  width: 200px;
   right: 100px;
   top: 0;
+
+  border-radius: 50%;
   background-color: blue;
   background: radial-gradient(
     76.75% 76.75% at 70% 23.25%,
@@ -126,11 +130,12 @@ form p {
 
 .ball2 {
   position: relative;
-  border-radius: 50%;
   height: 200px;
   width: 200px;
   left: 330px;
   top: 440px;
+
+  border-radius: 50%;
   background-color: blue;
   background: radial-gradient(
     76.75% 76.75% at 70% 23.25%,
@@ -141,14 +146,14 @@ form p {
 
 .senha {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .senha a {
+  font-size: .98rem;
   margin-top: 20px;
+
   color: rgba(255, 255, 255, 0.692);
-  font-size: 1rem;
 }
 
 .senha a:hover {
@@ -157,28 +162,29 @@ form p {
 }
 
 #checkbox {
-  margin-right: 2px;
   width: 13px;
   height: 13px;
+  margin-right: 2px;
   border-radius: 10px;
 }
 
 .btn {
-  margin-top: 30px;
   display: flex;
-  width: 100%;
   justify-content: center;
+  width: 100%;
+  margin-top: 30px;
 }
 
 form button {
-  border-radius: 10px;
-  border: none;
   width: 100px;
-  background-color: rgba(2, 2, 2, 0.5);
-  color: white;
-  font-size: 1.1rem;
-  text-align: center;
   height: 38px;
+  border: none;
+
+  font-size: 1.1rem;
+
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(2, 2, 2, 0.5);
 }
 
 form button:hover {
@@ -188,33 +194,32 @@ form button:hover {
 }
 
 .icons {
-  width: 100%;
   position: absolute;
+
+  width: 100%;
   top: 380px;
 }
 
 .icons span {
-  display: flex;
   width: 40%;
   height: 1px;
+
   background-color: rgba(240, 248, 255, 0.37);
 }
 
 .text {
   display: flex;
   align-items: center;
-  justify-content: baseline;
 }
 
 .icons p {
-  text-align: center;
-  align-items: center;
   display: flex;
-  z-index: 100;
+  align-items: center;
   width: 179px;
+  margin-inline: 10px;
+  text-align: center;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.822);
-  margin-inline: 10px;
 }
 
 .liks {
@@ -224,18 +229,23 @@ form button:hover {
 }
 
 .liks ul {
-  margin-top: 20px;
-  gap: 20px;
   display: flex;
   align-items: center;
-  text-align: center;
+  margin-top: 20px;
+  gap: 20px;
 }
 
 img {
   width: 25px;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 550px) {
+  .icons p {
+    font-size: 0.96rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .ball2 {
     position: relative;
     border-radius: 50%;
@@ -249,5 +259,21 @@ img {
       #05a8e9 0%,
       #091ee0 100%
     );
+  }
+  .icons p {
+    font-size: 0.89rem;
+  }
+
+  .senha a {
+    font-size: 0.77rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+  }
+
+  #checkbox {
+    width: 10px;
+    height: 10px;
   }
 }
