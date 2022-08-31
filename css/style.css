@@ -74,9 +74,9 @@ main {
   z-index: 100;
 }
 
-ul i {
-  margin-right: 4px;
-  color: rgb(0, 225, 255);
+li img {
+  width: 22px;
+  margin-inline:3px ;
 }
 
 
