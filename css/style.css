@@ -8,9 +8,9 @@
 
 :root {
   --background-color: #000020;
-  --background: rgb(1, 1, 53);
+  --background: #010135;
   --text-color: white;
-  --shadow-color: rgb(1, 75, 124);
+  --shadow-color: #014b7c;
 }
 
 html,

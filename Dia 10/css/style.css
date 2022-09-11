@@ -10,6 +10,13 @@ body {
   width: 100%;
 }
 
+:root {
+  --background-color: #000020;
+  --background: #010135;
+  --text-color: #ffffff;
+  --shadow-color: #014b7c;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -21,7 +28,7 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
-  background-color: #34495e;
+  background-color: var(--background-color);
 }
 
 .container {
@@ -29,7 +36,7 @@ body {
   background-color: transparent;
   font-family: sans-serif;
   font-size: 48px;
-  color: white;
+  color: var(--text-color);
   text-align: center;
   z-index: 10;
 }
@@ -37,22 +44,72 @@ body {
 .button {
   border: none;
   color: beige;
-  background-color: #2c3e50;
+  background-color: var(--background);
   cursor: pointer;
+  font-weight: 600;
   padding: 5px;
   font-size: 20px;
-  height: 39px;
-  width: 40%;
-  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.322);
+  height: 50px;
+  width: 140px;
+  box-shadow: 0px 0px 10px 4px var(--shadow-color);
   transition: box-shadow 0.2s;
+  transition: 0.2s;
   border-radius: 10px;
 }
 
 .active {
-  background-color: aliceblue;
-  color: black;
+  background-color: var(--shadow-color);
+  color: var(--text-color);
+}
+
+.button:hover{
+  filter: brightness(1.2);
 }
 
 .button:active {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+
+
+
+
+.btn-back {
+  position: fixed;
+  height: 46px;
+  width: 46px;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.toolTip {
+  border-radius: 0px 10px 10px 10px;
+  width: 60px;
+  padding: 6px 8px;
+  position: absolute;
+  top: 46px;
+  left: 30px;
+  font-family: sans-serif;
+  display: none;
+  font-weight: 600;
+  font-size: .9rem;
+  background-color: #01060fa2;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.btn-back a img {
+  width: 100%;
+  filter: drop-shadow(0 0 6px #014b7c);
+  transition: filter 0.3s;
+}
+
+.btn-back a img:hover {
+  filter: brightness(2.06);
+  filter: drop-shadow(0 0 10px rgb(0, 105, 175));
+}
+
+.btn-back:hover .toolTip {
+  display: inline;
 }

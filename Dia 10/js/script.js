@@ -3,7 +3,7 @@ window.onload = function () {
     selector: '.background',
     maxParticles: 190,
     sizeVariations: 3,
-    color: ['#34495e', '#1998db'],
+    color: ['#000020', '#010135', '#014b7c'],
     speed: 0.8,
     minDistance: 100,
     connectParticles: true,
@@ -18,7 +18,7 @@ window.onload = function () {
       {
         breakpoint: 425,
         options: {
-          maxParticles: 100,
+          maxParticles: 150,
           connectParticles: true
         }
       },
