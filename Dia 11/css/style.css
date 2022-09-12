@@ -202,6 +202,7 @@ main {
   fill: var(--white);
 }
 
+
 .login_button:disabled {
   cursor: auto;
   background-color: var(--white);
