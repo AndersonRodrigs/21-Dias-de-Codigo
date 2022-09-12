@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --whiteSmoke: #f9f9f9;
+  --light-grey: #ececec;
+  --grey: #c4c4c4;
+  --medium-grey: #a7a7a7;
+  --deep-grey: #343434;
+  --black: #000000;
+  --blue: #0000ff;
+  --red: #ff0000;
+  --green: #87b234;
+}
+
+main {
+  display: flex;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+
+  padding: clamp(35px, 8%, 70px);
+  background-color: var(--grey);
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_logo {
+  width: 130px;
+  margin-bottom: 80px;
+}
+
+.logo_title {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+
+  color: var(--deep-grey);
+}
+
+.login_label {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input {
+  border-radius: 5px;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  outline: none;
+  padding: 25px 10px 10px;
+
+  color: var(--deep-grey);
+  border: 2px solid rgba(255, 255, 255, 0);
+  background-color: var(--light-grey);
+}
+
+.login_label span {
+  position: absolute;
+  margin: 20px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--medium-grey);
+
+  transition: all 0.3s ease;
+}
+
+.login_label span:hover {
+  cursor: text;
+}
+
+.input:focus {
+  background-color: var(--whiteSmoke);
+  border: 2px solid var(--deep-grey);
+}
+
+.login_label .span-active {
+  font-size: 0.7rem;
+  margin: 8px 10px;
+}
+
+.login_icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+  gap: 10px;
+}
+
+.login_icons img {
+  width: 20px;
+}
+
+.icons_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  border-left: 3px solid var(--green);
+  background-color: var(--deep-grey);
+
+  transition: 0.3s;
+}
+
+.icons_button:hover {
+  background-color: var(--green);
+}
+
+/* .login_icons .icons_button:nth-child(1) {
+  background-color: #2E6DB4;
+}
+.login_icons .icons_button:nth-child(2) {
+  background-color: #0000ff;
+}
+.login_icons .icons_button:nth-child(3) {
+  background-color: #0000ff;
+} */
+
+.login_label--checkbox {
+  width: 100%;
+  margin: 15px 0 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.input--checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 3px;
+
+  background-color: var(--light-grey);
+}
+
+.input--checkbox:checked {
+  background-color: var(--green);
+}
+
+.input--checkbox:checked::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 10px;
+  margin: 2px 6px;
+  border-width: 0 3px 3px 0;
+  
+  border: 3px solid var(--white);
+  
+  transform: rotate(45deg);
+}
+
+.login_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  margin-bottom: 60px;
+  
+  border-radius: 20px;
+  border: none;
+  
+  background-color: var(--green);
+  
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.login_button svg {
+  fill: var(--white);
+}
+
+.login_button:disabled {
+  cursor: auto;
+  background-color: var(--white);
+  border: 2px solid var(--light-grey);
+}
+
+.login_button:disabled svg {
+  fill: var(--grey);
+}
+
+.login_link {
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+  
+  color: var(--deep-grey);
+  
+  transition: 0.3s;
+}
+
+.wallpaper {
+  width: 100%;
+  background-position: center;
+  background-image: url(../assets/wallpaper1.jpg);
+  background-size: cover;
+  flex: 1;
+}
