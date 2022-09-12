@@ -53,7 +53,7 @@ main {
 .logo_title {
   font-size: 1.5rem;
   margin-bottom: 30px;
-  font-weight:900;
+  font-weight: 900;
   color: var(--deep-grey);
 }
 
@@ -174,11 +174,10 @@ main {
   width: 5px;
   height: 10px;
   margin: 2px 6px;
-  border-width: 0 3px 3px 0;
-
-  border: 3px solid var(--white);
 
   transform: rotate(45deg);
+  border: 3px solid var(--white);
+  border-width: 0 3px 3px 0;
 }
 
 .login_button {
@@ -233,8 +232,6 @@ main {
   flex: 1;
 }
 
-
-
 .btn-back {
   position: fixed;
   height: 46px;
@@ -268,4 +265,3 @@ main {
 .btn-back a svg {
   filter: drop-shadow(0 0 2px var(--deep-grey));
 }
-
