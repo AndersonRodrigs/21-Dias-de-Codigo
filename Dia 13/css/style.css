@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #00001d;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #010135;
+  box-shadow: 0px 0px 8px;
+}
+
+#menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+}
+
+#menu a:hover {
+  background-color: #0067ac;
+  border-radius: 4px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.linkAtivado {
+  background-color: #0067ac;
+  border-radius: 4px;
+}
+
+.btn-back {
+  position: fixed;
+  height: 46px;
+  width: 46px;
+  top: 90px;
+  left: 20px;
+}
+
+.toolTip {
+  border-radius: 0px 10px 10px 10px;
+  width: 60px;
+  padding: 6px 8px;
+  position: absolute;
+  top: 46px;
+  left: 30px;
+  font-family: sans-serif;
+  display: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: #01060fa2;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.btn-back a img {
+  width: 100%;
+  filter: drop-shadow(0 0 6px rgb(1, 75, 124));
+  transition: filter 0.3s;
+}
+
+.btn-back a img:hover {
+  filter: brightness(2.06);
+  filter: drop-shadow(0 0 10px rgb(0, 105, 175));
+}
+
+.btn-back:hover .toolTip {
+  display: inline;
+}
+
+@media screen and (max-width: 400px) {
+  #btn_close {
+    position: absolute;
+
+    top: 70%;
+  }
+
+  #modal-img {
+    width: 270px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background-color: #010135;
+    height: 0px;
+    transition: 0.6s all;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+    text-align: center;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0.2rem 1rem;
+    border-bottom: 2px solid rgba(0, 204, 255, 0.055);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #hamburger {
+    color: white;
+    display: block;
+    border-top: 2px solid;
+    width: 25px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    margin-top: 5px;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: currentColor;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    position: relative;
+    top: -7px;
+  }
+}
