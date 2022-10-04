@@ -22,7 +22,7 @@
 • ✅ Dia 10 - Utilizar a lib Particle.js do JavaScript. <br>
 • ✅ Dia 11 - Crie o layout de um formulário de login. <br>
 • ✅ Dia 12 - Desenvolver uma galeria de imagens. <br>
-• ⬛ Dia 13 - Desenvolver um menu responsivo. <br>
+• ✅ Dia 13 - Desenvolver um menu responsivo. <br>
 • ⬛ Dia 14 - Criar um formulário de quizzes.
 
 ### Linguagens utilizadas:
