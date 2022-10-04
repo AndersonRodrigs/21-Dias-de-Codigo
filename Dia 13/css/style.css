@@ -108,18 +108,6 @@ nav {
   display: inline;
 }
 
-@media screen and (max-width: 400px) {
-  #btn_close {
-    position: absolute;
-
-    top: 70%;
-  }
-
-  #modal-img {
-    width: 270px;
-    border-radius: 4px;
-  }
-}
 
 @media screen and (max-width: 600px) {
   #menu {

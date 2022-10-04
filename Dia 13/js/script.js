@@ -7,6 +7,8 @@ function toggleMenu(e) {
 $('#btn-mobile').click(toggleMenu)
 $('#btn-mobile').on('touchstart', toggleMenu)
 
+
+
 function clickL(el) {
   $('nav a').each((indice, link) => {
     $(link).removeClass('linkAtivado')

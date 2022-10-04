@@ -1,0 +1,110 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding: 0 30px;
+}
+
+.column {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  float: left;
+}
+
+body {
+  font-family: 'Barclaycard Co Lt', Tahoma, sans-serif;
+  font-size: 1rem;
+  color: #444444;
+  background-color: #f1f1f1;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #018fd0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  color: #5224a0;
+  font-size: 1.62rem;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+.column h2 {
+  margin-top: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.questions_box {
+  background-color: #ffffff;
+  padding: 60px;
+  text-align: left;
+  max-width: 960px;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background: #075da8;
+  color: white;
+  margin-top: 25px;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.button:hover {
+  background-color: #059fdb !important;
+  color: white;
+}
+
+input:checked {
+  color: #018fd0;
+}
+
+#question-2,
+#question-3,
+#question-4,
+#question-5,
+#question-6 {
+  display: none;
+}
+
+#progress_bar {
+  background-color: #018fd0;
+  width: 20%;
+  height: 10px;
+  transition: all 100ms ease-in-out;
+}
