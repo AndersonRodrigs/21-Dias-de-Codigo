@@ -10,9 +10,11 @@ let question_6 = document.getElementById('question-6')
 let score = document.getElementById('printtotalscore')
 let scoreinfo = document.getElementById('printscoreinfo')
 
+let input = document.querySelector('input')
+
 function storeAnswers(question_number, event) {
   if (event.target.type === 'radio') {
-    console.log(event.target.value)
+    // console.log(event.target.value)
     answers['question' + question_number] = parseInt(event.target.value)
   }
 }
@@ -57,13 +59,14 @@ let buttonsSubmit = document.querySelectorAll('#submit')
 let buttonSubmit = document.getElementById('submit')
 
 function nextQuestion(question_number) {
-  let current_question_number = `${question_number - 1}`
+  let current_question_number = `${question_number -1}`
 
-  let elemet = document.getElementById(`question-${question_number}`)
-  let elemet2 = document.getElementById(`question-${current_question_number}`)
+  let previousElement = document.getElementById(`question-${current_question_number}`)
 
-  elemet.style.display = 'block'
-  elemet2.style.display = 'none'
+  let nextElement= document.getElementById(`question-${question_number}`)
+
+  previousElement.style.display = 'none'
+  nextElement.style.display = 'block'
 }
 
 let count = 1
