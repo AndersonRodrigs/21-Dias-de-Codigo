@@ -15,15 +15,23 @@
 • ✅ Dia 3 - Criar um botão animado. <br>
 • ✅ Dia 4 - Criar uma calculadora. <br>
 • ✅ Dia 5 - Desenvolver uma página customizada que exiba o erro 404. <br>
-• ✅ Dia 6 - Crie um card com o efeito glassmorphism. <br>
+• ✅ Dia 6 - Criar um card com o efeito glassmorphism. <br>
 • ✅ Dia 7 - Desenvolver um contador. <br>
 • ✅ Dia 8 - Desenvolver um toggle que altere o tema para claro e escuro. <br>
 • ✅ Dia 9 - Criar uma animação de loading. <br>
 • ✅ Dia 10 - Utilizar a lib Particle.js do JavaScript. <br>
-• ✅ Dia 11 - Crie o layout de um formulário de login. <br>
+• ✅ Dia 11 - Criar o layout de um formulário de login. <br>
 • ✅ Dia 12 - Desenvolver uma galeria de imagens. <br>
 • ✅ Dia 13 - Desenvolver um menu responsivo. <br>
-• ⬛ Dia 14 - Criar um formulário de quizzes.
+• ✅ Dia 14 - Criar um formulário de quizzes. <br>
+• ⬛ Dia 15 - Desenvolver um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos, preços e imagens). <br>
+• ⬛ Dia 16 - Desenvolver um site utilizando alguma API pública. <br>
+• ⬛ Dia 17 - Desenvolver um site que capture os eventos do teclado e exiba na tela o evento e a tecla pressionada. <br>
+• ⬛ Dia 18 - Desenvolver um gerador de senhas aleatórias. <br>
+• ⬛ Dia 19 - Desenvolver um site que gere imagens aleatórias utilizando a API do Unsplash. <br>
+• ⬛ Dia 20 - Desenvolver um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência. <br>
+• ⬛ Dia 21 - Desenvolver uma página para ser seu portifólio. 
+
 
 ### Linguagens utilizadas:
 
