@@ -24,7 +24,7 @@
 • ✅ Dia 12 - Desenvolver uma galeria de imagens. <br>
 • ✅ Dia 13 - Desenvolver um menu responsivo. <br>
 • ✅ Dia 14 - Criar um formulário de quizzes. <br>
-• ⬛ Dia 15 - Desenvolver um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos, preços e imagens). <br>
+• ✅ Dia 15 - Desenvolver um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos, preços e imagens). <br>
 • ⬛ Dia 16 - Desenvolver um site utilizando alguma API pública. <br>
 • ⬛ Dia 17 - Desenvolver um site que capture os eventos do teclado e exiba na tela o evento e a tecla pressionada. <br>
 • ⬛ Dia 18 - Desenvolver um gerador de senhas aleatórias. <br>
