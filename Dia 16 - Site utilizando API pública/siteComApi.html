@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/887ffa7632.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Clima agora!</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="form">
+        <h3>Confira o clima de uma cidade:</h3>
+        <form class="form-input-container">
+          <input
+            type="text"
+            placeholder="Digite o nome da cidade"
+            id="city-input"
+          />
+          <button id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div id="wether-data" class="hide">
+        <h2>
+          <i class="fa-solid fa-location-dot"></i>
+          <span id="city"></span>
+          <img src="" alt="Bandeira do país" id="country" />
+        </h2>
+        <p id="temperature"><span></span>&deg;C</p>
+        <div id="description-container">
+          <p id="description"></p>
+          <img
+            src="https://openweathermap.org/img/wn/01d.png"
+            alt="Condições do tempo"
+            id="wheater-icon"
+          />
+        </div>
+        <div id="details-container">
+          <p id="humydity">
+            <i class="fa-solid fa-droplet"></i>
+            <span></span>
+          </p>
+          <p id="wind">
+            <i class="fa-solid fa-wind"></i>
+            <span></span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <div class="btn-back">
+      <span class="toolTip">Voltar</span>
+      <a href="../index.html" target="_top"
+        ><img src="../assets/volte.png" alt=""
+      /></a>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
