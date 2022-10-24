@@ -14,10 +14,10 @@ const getWeatherData = async city => {
 const showWeatherData = async city => {
   const data = await getWeatherData(city)
   if (data.cod === "404") {
-    cityInput.val("")
-    weatherContainer.addClass("hide")
+    console.log('sdcasasxa')
     alert("No foi possivel encontrar o clima de uma cidade com esse nome.")
-
+    weatherContainer.addClass("hide")
+    cityInput.val("")
     return
   }
 
@@ -51,6 +51,6 @@ $("#search").on("click", e => {
   searchCity(e)
 })
 
-$("#city-input").on("keyup", e => {
+$("#city-input").on("keydow", e => {
   searchCity(e)
 })
