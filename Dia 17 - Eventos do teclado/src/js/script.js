@@ -8,13 +8,9 @@ form.addEventListener("submit", e => {
 
 
 function mostrarTeclasNaTela(e) {
-  // let teclaPressionada = e.code === "Space" ? e.code : e.key
-  e = e || window.event;
-  var key = e.keyCode || e.which;
-  let tecla = String.fromCharCode(key); 
-  console.log(tecla)
+  let teclaPressionada = e.code === "Space" ? e.code : e.key
   const li = document.createElement("li")
-  li.innerHTML = tecla
+  li.innerHTML = teclaPressionada
   teclas.appendChild(li)
 }
 
