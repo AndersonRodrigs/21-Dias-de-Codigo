@@ -14,7 +14,6 @@ const getWeatherData = async city => {
 const showWeatherData = async city => {
   const data = await getWeatherData(city)
   if (data.cod === "404") {
-    console.log('sdcasasxa')
     alert("No foi possivel encontrar o clima de uma cidade com esse nome.")
     weatherContainer.addClass("hide")
     cityInput.val("")
