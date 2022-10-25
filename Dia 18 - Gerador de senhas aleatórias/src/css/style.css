@@ -153,3 +153,46 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
+
+
+
+.btn-back {
+  position: fixed;
+  height: 46px;
+  width: 46px;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.toolTip {
+  border-radius: 0px 10px 10px 10px;
+  width: 60px;
+  padding: 6px 8px;
+  position: absolute;
+  top: 46px;
+  left: 30px;
+  font-family: sans-serif;
+  display: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: #01060fa2;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.btn-back a img {
+  width: 100%;
+  filter: drop-shadow(0 0 6px #014b7c);
+  transition: filter 0.3s;
+}
+
+.btn-back a img:hover {
+  filter: brightness(2.06);
+  filter: drop-shadow(0 0 10px rgb(0, 105, 175));
+}
+
+.btn-back:hover .toolTip {
+  display: inline;
+}
