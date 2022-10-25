@@ -154,7 +154,11 @@ body {
   cursor: pointer;
 }
 
-
+@media screen and (max-width: 480px){
+  .alert {
+    top: 90px;
+  }
+}
 
 
 .btn-back {
