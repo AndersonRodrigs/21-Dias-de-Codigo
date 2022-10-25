@@ -53,6 +53,7 @@ ul {
   background-color: black;
   color: white;
   box-shadow: 0 2px 0 2px rgb(34, 34, 34), 0 5px 0 4px rgb(0, 0, 0);
+  text-transform: uppercase;
 }
 
 .teclas li:hover {
