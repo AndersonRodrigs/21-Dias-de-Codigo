@@ -17,6 +17,6 @@ function mostrarTeclasNaTela(e) {
 }
 
 
-input.addEventListener("keyup", e => {
+input.addEventListener("keydown", e => {
   mostrarTeclasNaTela(e)
 })
