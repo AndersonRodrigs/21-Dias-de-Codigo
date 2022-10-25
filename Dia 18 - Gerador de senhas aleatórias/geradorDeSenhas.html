@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/pin-code.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Gerador de Senhas</title>
+  </head>
+  <body>
+    <img src="./assets/logo.png" alt="logo gerador de senha" class="logo" />
+    <main class="container-input">
+      <span>Tamanho <span id="valor"></span> caracteres</span>
+      <input
+        type="range"
+        min="8"
+        max="25"
+        value="8"
+        id="slider"
+        class="slider"
+      />
+
+      <button id="button" class="button-cta" onclick="generationPasword()">
+        Gerar senha
+      </button>
+    </main>
+
+    <section id="container-password" class="container-password hide">
+      <span class="title">Sua senha gerada foi...</span>
+      <span id="password" class="password" onclick="coppyPassword()"></span>
+      <span class="tooltip">Clique na senha para copiar.</span>
+    </section>
+
+    <div open id="alert" class="alert hide">
+      <span>
+        <h2>Senha copiada com sucesso!</h2>
+        <button id="close-alert" class="close-alert" onclick="closeAlert()">
+          OK
+        </button>
+      </span>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
