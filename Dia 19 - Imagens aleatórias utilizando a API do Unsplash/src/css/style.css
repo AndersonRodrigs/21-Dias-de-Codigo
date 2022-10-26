@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background: #2b2b2b;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  margin: 45px 0;
+  font-size: 2.1rem;
+  text-align: center;
+  color: #ecebeb;
+}
+
+#images {
+  width: 100%;
+  column-count: 3;
+  max-width: 1100px;
+  margin-bottom: 45px;
+}
+
+#images li {
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#images img {
+  width: 100%;
+  min-width: 150px;
+  transition: all 0.4s;
+}
+
+#images img:hover {
+  transform: scale(1.06);
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  max-width: 200px;
+  margin-bottom: 50px;
+
+  border-radius: 10px;
+  border: none;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  cursor: pointer;
+  color: white;
+  background-color: #003a70;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #025099;
+}
+
+
+
+.btn-back {
+  position: fixed;
+  height: 46px;
+  width: 46px;
+  top: 10px;
+  left: 20px;
+  z-index: 10;
+}
+
+.toolTip {
+  border-radius: 0px 10px 10px 10px;
+  width: 60px;
+  padding: 6px 8px;
+  position: absolute;
+  top: 46px;
+  left: 30px;
+  font-family: sans-serif;
+  display: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: #01060fa2;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.btn-back a img {
+  width: 100%;
+  filter: drop-shadow(0 0 6px #014b7c);
+  transition: filter 0.3s;
+}
+
+.btn-back a img:hover {
+  filter: brightness(2.06);
+  filter: drop-shadow(0 0 10px rgb(0, 105, 175));
+}
+
+.btn-back:hover .toolTip {
+  display: inline;
+}
+
+
+@media screen and (max-width: 800px) {
+  #images {
+    column-count: 2;
+  }
+
+  .btn-back {
+    width: 40px;
+  }
+
+  .title {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #images {
+    column-count: 1;
+  }
+}
+
+
+
