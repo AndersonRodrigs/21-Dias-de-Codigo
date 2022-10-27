@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/887ffa7632.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Emoji picker</title>
+  </head>
+  <body>
+    <h1 class="title">Emoji picker</h1>
+    <nav class="navigation">
+      <form action="" class="form">
+        <input type="text" placeholder="Digte o nome do emoji" id="input" />
+        <button id="button" class="button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </nav>
+
+    <main class="container">
+      <section class="emoji-area">
+        <ul id="emojis" class="emojis"></ul>
+      </section>
+      <div class="loading hide">
+        <span class="area-loading">
+          <h3>Carregando emojis</h3>
+          <span class="loopi">🙃</span>
+        </span>
+      </div>
+      <div class="emoji-not-found hide">
+        <span class="area-loading">
+          <h3>Nao foi possivel encontrar um emoji com esse nome...🤔</h3>
+        </span>
+      </div>
+      <span class="tooltip">Clique no emoji para copiar.</span>
+    </main>
+
+    <div class="alert hide">
+      <span>
+        <h2 id="copied-emoji"></h2>
+      </span>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

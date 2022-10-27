@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+htm,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Fuzzy Bubbles", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #167b88;
+  padding-inline: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+.title {
+  font-weight: 700;
+  margin-top: 25px;
+  font-size: 2.5rem;
+}
+
+.navigation {
+  margin-top: 26px;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  padding-inline: 5px;
+  font-size: 1.1rem;
+  background-color: azure;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.button {
+  border: none;
+  font-size: 1rem;
+  height: 40px;
+  font-weight: 700;
+  padding-inline: 20px;
+  border-radius: 4px;
+  background-color: azure;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #00bddf;
+}
+
+
+.container {
+  width: 100%;
+  margin-top: 50px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.emoji-area {
+  display: flex;
+  width: 100%;
+}
+
+.emoji-area .emojis {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.emojis li {
+  height: 70px;
+  padding-inline: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+
+  font-size: 2.4rem;
+  background-color: #3d4444;
+  transition: bottom 0.3s;
+  cursor: pointer;
+}
+
+.emojis li:hover {
+  position: relative;
+  bottom: 8px;
+  box-shadow: 0px 2px 16px;
+}
+
+.tooltip {
+  position: fixed;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  visibility: hidden;
+  top: 20px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.alert {
+  position: fixed;
+  bottom: 50px;
+
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.alert:hover {
+  background-color: #dddddd;
+}
+
+.alert span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.alert span h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.loading {
+  position: absolute;
+}
+
+.area-loading {
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.loopi {
+  position: relative;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.emoji-not-found span h3 {
+  font-size: 1.7rem;
+  text-align: center;
+}
