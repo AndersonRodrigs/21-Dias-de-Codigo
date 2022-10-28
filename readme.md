@@ -1,4 +1,4 @@
-<h1>21 dias de código</h1> 
+<h1>21 dias de código</h1>
 
 ![image](https://user-images.githubusercontent.com/105132452/191107517-ff001dea-66e7-42b7-83d6-5c7545282847.png)
 
@@ -29,9 +29,8 @@
 • ✅ Dia 17 - Desenvolver um site que capture os eventos do teclado e exiba na tela o evento e a tecla pressionada. <br>
 • ✅ Dia 18 - Desenvolver um gerador de senhas aleatórias. <br>
 • ✅ Dia 19 - Desenvolver um site que gere imagens aleatórias utilizando a API do Unsplash. <br>
-• ⬛ Dia 20 - Desenvolver um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência. <br>
-• ⬛ Dia 21 - Desenvolver uma página para ser seu portifólio. 
-
+• ✅ Dia 20 - Desenvolver um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência. <br>
+• ⬛ Dia 21 - Desenvolver uma página para ser seu portifólio.
 
 ### Linguagens utilizadas:
 
