@@ -1,6 +1,7 @@
 <h1>21 dias de código</h1>
 
-![image](https://user-images.githubusercontent.com/105132452/191107517-ff001dea-66e7-42b7-83d6-5c7545282847.png)
+![image](https://user-images.githubusercontent.com/105132452/198434264-50eb15c0-ce58-447d-ad8e-c0f57b7a9366.png)
+
 
 <p>21 dias de código é um desafio proposto pela Rocketseat com o intuito de codar pelo menos uma hora por dia, realizando desafios.</p>
 <h3>Regras do desafio: </h3>
